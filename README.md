@@ -15,8 +15,6 @@ jadi web ini jalan 100% offline tanpa file tambahan.
 | `UPLOAD_ENDPOINT` | `https://photo-ai-iims.zirolu.id/v1/iqos` | API tempat gambar hasil diunggah |
 | `UPLOAD_AUTH` | `client_id:secret` | Header `Authorization` untuk upload |
 | `RESULT_BASE_URL` | link artifact claude.ai | Tidak dipakai QR. Halaman `#r-...` tetap bisa menggambar story kalau link lama dibuka |
-| `QUESTION_SECONDS` | 10 | Waktu tiap pemain menjawab |
-| `WARN_AT` | 3 | Detik terakhir timer berubah warna + bunyi tik |
 | `HOME_SECONDS` | 15 | Halaman QR kembali ke Home otomatis |
 | `RESULT_FLIP_MS` | 3600 | Jeda kartu hasil bergantian depan-belakang |
 | `PROCESS_MS` | 3400 | Lama animasi loading sebelum hasil |
