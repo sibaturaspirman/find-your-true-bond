@@ -466,11 +466,11 @@ button{font:inherit;color:inherit}
 
 .screen:not(.on), .screen:not(.on) *, .screen:not(.on) *::before, .screen:not(.on) *::after{animation-play-state:paused !important}
 /* ---------- Home idle: light sweep + floating button ---------- */
-#home{overflow:hidden}
+#home{overflow:hidden;isolation:isolate}
 #home::before{content:"";position:absolute;top:0;bottom:0;left:0;width:60%;z-index:-1;pointer-events:none;will-change:transform;
   background:linear-gradient(90deg, transparent 15%, rgba(255,235,225,.10) 35%, rgba(255,245,240,.22) 50%, rgba(255,235,225,.10) 65%, transparent 85%);
-  transform:translateX(-120%) skewX(-16deg);animation:sweep 5.5s cubic-bezier(.45,.05,.4,1) infinite}
-@keyframes sweep{0%{transform:translateX(-120%) skewX(-16deg)}55%,100%{transform:translateX(200%) skewX(-16deg)}}
+  transform:translateX(-120%) skewX(16deg);animation:sweep 5.5s cubic-bezier(.45,.05,.4,1) infinite}
+@keyframes sweep{0%{transform:translateX(-120%) skewX(16deg)}55%,100%{transform:translateX(200%) skewX(16deg)}}
 #home .next{animation:bob 2.8s ease-in-out infinite}
 #home .next:active{animation-play-state:paused;filter:brightness(.92)}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(calc(var(--u)*-1.3))}}
